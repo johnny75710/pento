@@ -14,7 +14,6 @@ defmodule PentoWeb.WrongLive do
     Enum.random(1..10) |> Integer.to_string()
   end
 
-  @spec render(any) :: Phoenix.LiveView.Rendered.t()
   def render(assigns) do
     ~H"""
     <h1 class="mb-4 text-4xl font-extrabold">Your score: <%= @score %></h1>
